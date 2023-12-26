@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_list_jawaban_jawabans",
+  "info": {
+    "displayName": "Jawaban",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "jawaban_benar": {
+      "type": "boolean"
+    },
+    "gambar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

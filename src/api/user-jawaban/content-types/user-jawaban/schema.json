@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_jawabans",
+  "info": {
+    "singularName": "user-jawaban",
+    "pluralName": "user-jawabans",
+    "displayName": "UserJawaban",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Skor": {
+      "type": "decimal"
+    },
+    "Soal": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::soal.soal",
+      "inversedBy": "user_jawabans"
+    },
+    "User": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "UserJawabans"
+    }
+  }
+}

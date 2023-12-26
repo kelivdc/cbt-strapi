@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topiks",
+  "info": {
+    "singularName": "topik",
+    "pluralName": "topiks",
+    "displayName": "Topik",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "Topik"
+    },
+    "soals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::soal.soal",
+      "mappedBy": "Topik"
+    }
+  }
+}

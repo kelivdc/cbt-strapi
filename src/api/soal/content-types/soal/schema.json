@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "soals",
+  "info": {
+    "singularName": "soal",
+    "pluralName": "soals",
+    "displayName": "Soal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tipe": {
+      "type": "enumeration",
+      "enum": [
+        "Pilihan Ganda",
+        "Esay",
+        "Sub Soal"
+      ],
+      "required": true
+    },
+    "waktu": {
+      "type": "integer"
+    },
+    "keterangan": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bobot": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "uuid": {
+      "type": "customField",
+      "customField": "plugin::field-uuid.uuid"
+    },
+    "Topik": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topik.topik",
+      "inversedBy": "soals"
+    },
+    "pilihan_ganda": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list-jawaban.jawaban"
+    },
+    "user_jawabans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-jawaban.user-jawaban",
+      "mappedBy": "Soal"
+    }
+  }
+}

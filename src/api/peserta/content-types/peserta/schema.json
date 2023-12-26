@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pesertas",
+  "info": {
+    "singularName": "peserta",
+    "pluralName": "pesertas",
+    "displayName": "Peserta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "kelompok": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kelompok.kelompok"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

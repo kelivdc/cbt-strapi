@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kelompoks",
+  "info": {
+    "singularName": "kelompok",
+    "pluralName": "kelompoks",
+    "displayName": "Kelompok",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "pesertas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::peserta.peserta"
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "waktu": {
+      "type": "integer"
+    }
+  }
+}
