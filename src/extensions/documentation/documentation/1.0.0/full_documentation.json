@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-12-24T17:24:53.678Z"
+    "x-generation-date": "2023-12-28T03:30:20.948Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -27,6 +27,10 @@
     {
       "url": "http://localhost:1337/api",
       "description": "Development server"
+    },
+    {
+      "url": "https://api.misteryoscourse.com/api",
+      "description": "Production server"
     }
   ],
   "externalDocs": {
