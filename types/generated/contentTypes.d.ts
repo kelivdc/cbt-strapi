@@ -835,6 +835,10 @@ export interface ApiTopikTopik extends Schema.CollectionType {
       'oneToMany',
       'api::soal.soal'
     >;
+    mulai: Attribute.DateTime & Attribute.Required;
+    akhir: Attribute.DateTime & Attribute.Required;
+    tipe_soal: Attribute.Enumeration<['Ganda', 'Multi']> & Attribute.Required;
+    show_result: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

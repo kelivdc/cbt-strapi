@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-12-28T03:30:20.948Z"
+    "x-generation-date": "2023-12-30T17:31:12.807Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -27,10 +27,6 @@
     {
       "url": "http://localhost:1337/api",
       "description": "Development server"
-    },
-    {
-      "url": "https://api.misteryoscourse.com/api",
-      "description": "Production server"
     }
   ],
   "externalDocs": {
@@ -1523,6 +1519,24 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "mulai": {
+                                                  "type": "string",
+                                                  "format": "date-time"
+                                                },
+                                                "akhir": {
+                                                  "type": "string",
+                                                  "format": "date-time"
+                                                },
+                                                "tipe_soal": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "Ganda",
+                                                    "Multi"
+                                                  ]
+                                                },
+                                                "show_result": {
+                                                  "type": "boolean"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -3158,6 +3172,24 @@
                                                                   }
                                                                 }
                                                               }
+                                                            },
+                                                            "mulai": {
+                                                              "type": "string",
+                                                              "format": "date-time"
+                                                            },
+                                                            "akhir": {
+                                                              "type": "string",
+                                                              "format": "date-time"
+                                                            },
+                                                            "tipe_soal": {
+                                                              "type": "string",
+                                                              "enum": [
+                                                                "Ganda",
+                                                                "Multi"
+                                                              ]
+                                                            },
+                                                            "show_result": {
+                                                              "type": "boolean"
                                                             },
                                                             "createdAt": {
                                                               "type": "string",
@@ -5083,6 +5115,24 @@
                           }
                         }
                       },
+                      "mulai": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "akhir": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "tipe_soal": {
+                        "type": "string",
+                        "enum": [
+                          "Ganda",
+                          "Multi"
+                        ]
+                      },
+                      "show_result": {
+                        "type": "boolean"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -5391,6 +5441,11 @@
         ],
         "properties": {
           "data": {
+            "required": [
+              "mulai",
+              "akhir",
+              "tipe_soal"
+            ],
             "type": "object",
             "properties": {
               "title": {
@@ -5423,6 +5478,24 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "mulai": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "akhir": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "tipe_soal": {
+                "type": "string",
+                "enum": [
+                  "Ganda",
+                  "Multi"
+                ]
+              },
+              "show_result": {
+                "type": "boolean"
               }
             }
           }
@@ -5476,6 +5549,11 @@
       },
       "Topik": {
         "type": "object",
+        "required": [
+          "mulai",
+          "akhir",
+          "tipe_soal"
+        ],
         "properties": {
           "title": {
             "type": "string"
@@ -6716,6 +6794,24 @@
                                         }
                                       }
                                     },
+                                    "mulai": {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    "akhir": {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    "tipe_soal": {
+                                      "type": "string",
+                                      "enum": [
+                                        "Ganda",
+                                        "Multi"
+                                      ]
+                                    },
+                                    "show_result": {
+                                      "type": "boolean"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -6856,6 +6952,24 @@
                 }
               }
             }
+          },
+          "mulai": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "akhir": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tipe_soal": {
+            "type": "string",
+            "enum": [
+              "Ganda",
+              "Multi"
+            ]
+          },
+          "show_result": {
+            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -8092,6 +8206,24 @@
                                         }
                                       }
                                     }
+                                  },
+                                  "mulai": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                  },
+                                  "akhir": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                  },
+                                  "tipe_soal": {
+                                    "type": "string",
+                                    "enum": [
+                                      "Ganda",
+                                      "Multi"
+                                    ]
+                                  },
+                                  "show_result": {
+                                    "type": "boolean"
                                   },
                                   "createdAt": {
                                     "type": "string",

@@ -26,6 +26,26 @@
       "relation": "oneToMany",
       "target": "api::soal.soal",
       "mappedBy": "Topik"
+    },
+    "mulai": {
+      "type": "datetime",
+      "required": true
+    },
+    "akhir": {
+      "type": "datetime",
+      "required": true
+    },
+    "tipe_soal": {
+      "type": "enumeration",
+      "enum": [
+        "Ganda",
+        "Multi"
+      ],
+      "required": true
+    },
+    "show_result": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
