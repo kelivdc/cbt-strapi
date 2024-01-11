@@ -780,7 +780,7 @@ export interface ApiSoalSoal extends Schema.CollectionType {
   };
   attributes: {
     title: Attribute.String;
-    tipe: Attribute.Enumeration<['Pilihan Ganda', 'Esay', 'Sub Soal']> &
+    tipe: Attribute.Enumeration<['Pilihan Ganda', 'Multi jawaban']> &
       Attribute.Required;
     waktu: Attribute.Integer;
     keterangan: Attribute.Text;
@@ -802,6 +802,7 @@ export interface ApiSoalSoal extends Schema.CollectionType {
       'oneToMany',
       'api::user-jawaban.user-jawaban'
     >;
+    multi_jawaban: Attribute.Component<'list-jawaban.multi-jawaban', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -835,8 +836,8 @@ export interface ApiTopikTopik extends Schema.CollectionType {
       'oneToMany',
       'api::soal.soal'
     >;
-    mulai: Attribute.DateTime & Attribute.Required;
-    akhir: Attribute.DateTime & Attribute.Required;
+    mulai: Attribute.DateTime;
+    akhir: Attribute.DateTime;
     tipe_soal: Attribute.Enumeration<['Ganda', 'Multi']> & Attribute.Required;
     show_result: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;

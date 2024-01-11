@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_list_jawaban_multi_jawabans",
+  "info": {
+    "displayName": "multi_jawaban"
+  },
+  "options": {},
+  "attributes": {
+    "hint": {
+      "type": "string"
+    },
+    "jawaban": {
+      "type": "integer"
+    }
+  }
+}

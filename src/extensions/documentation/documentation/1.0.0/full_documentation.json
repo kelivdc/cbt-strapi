@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-12-30T17:31:12.807Z"
+    "x-generation-date": "2024-01-11T15:19:17.517Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -800,8 +800,7 @@
                                                                 "type": "string",
                                                                 "enum": [
                                                                   "Pilihan Ganda",
-                                                                  "Esay",
-                                                                  "Sub Soal"
+                                                                  "Multi jawaban"
                                                                 ]
                                                               },
                                                               "waktu": {
@@ -1463,6 +1462,23 @@
                                                                           }
                                                                         }
                                                                       }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "multi_jawaban": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "id": {
+                                                                      "type": "number"
+                                                                    },
+                                                                    "hint": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "jawaban": {
+                                                                      "type": "integer"
                                                                     }
                                                                   }
                                                                 }
@@ -2453,8 +2469,7 @@
                                                                             "type": "string",
                                                                             "enum": [
                                                                               "Pilihan Ganda",
-                                                                              "Esay",
-                                                                              "Sub Soal"
+                                                                              "Multi jawaban"
                                                                             ]
                                                                           },
                                                                           "waktu": {
@@ -3120,6 +3135,23 @@
                                                                               }
                                                                             }
                                                                           },
+                                                                          "multi_jawaban": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                              "type": "object",
+                                                                              "properties": {
+                                                                                "id": {
+                                                                                  "type": "number"
+                                                                                },
+                                                                                "hint": {
+                                                                                  "type": "string"
+                                                                                },
+                                                                                "jawaban": {
+                                                                                  "type": "integer"
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          },
                                                                           "createdAt": {
                                                                             "type": "string",
                                                                             "format": "date-time"
@@ -3530,8 +3562,7 @@
                 "type": "string",
                 "enum": [
                   "Pilihan Ganda",
-                  "Esay",
-                  "Sub Soal"
+                  "Multi jawaban"
                 ]
               },
               "waktu": {
@@ -3589,6 +3620,12 @@
                     }
                   ],
                   "example": "string or id"
+                }
+              },
+              "multi_jawaban": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ListJawabanMultiJawabanComponent"
                 }
               }
             }
@@ -3655,8 +3692,7 @@
             "type": "string",
             "enum": [
               "Pilihan Ganda",
-              "Esay",
-              "Sub Soal"
+              "Multi jawaban"
             ]
           },
           "waktu": {
@@ -4573,8 +4609,7 @@
                                                                 "type": "string",
                                                                 "enum": [
                                                                   "Pilihan Ganda",
-                                                                  "Esay",
-                                                                  "Sub Soal"
+                                                                  "Multi jawaban"
                                                                 ]
                                                               },
                                                               "waktu": {
@@ -4924,6 +4959,23 @@
                                                                   }
                                                                 }
                                                               },
+                                                              "multi_jawaban": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "id": {
+                                                                      "type": "number"
+                                                                    },
+                                                                    "hint": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "jawaban": {
+                                                                      "type": "integer"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -5211,6 +5263,12 @@
               }
             }
           },
+          "multi_jawaban": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ListJawabanMultiJawabanComponent"
+            }
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -5434,6 +5492,20 @@
           }
         }
       },
+      "ListJawabanMultiJawabanComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "hint": {
+            "type": "string"
+          },
+          "jawaban": {
+            "type": "integer"
+          }
+        }
+      },
       "TopikRequest": {
         "type": "object",
         "required": [
@@ -5442,8 +5514,6 @@
         "properties": {
           "data": {
             "required": [
-              "mulai",
-              "akhir",
               "tipe_soal"
             ],
             "type": "object",
@@ -5550,8 +5620,6 @@
       "Topik": {
         "type": "object",
         "required": [
-          "mulai",
-          "akhir",
           "tipe_soal"
         ],
         "properties": {
@@ -6074,8 +6142,7 @@
                                                     "type": "string",
                                                     "enum": [
                                                       "Pilihan Ganda",
-                                                      "Esay",
-                                                      "Sub Soal"
+                                                      "Multi jawaban"
                                                     ]
                                                   },
                                                   "waktu": {
@@ -6741,6 +6808,23 @@
                                                       }
                                                     }
                                                   },
+                                                  "multi_jawaban": {
+                                                    "type": "array",
+                                                    "items": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "id": {
+                                                          "type": "number"
+                                                        },
+                                                        "hint": {
+                                                          "type": "string"
+                                                        },
+                                                        "jawaban": {
+                                                          "type": "integer"
+                                                        }
+                                                      }
+                                                    }
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -7152,8 +7236,7 @@
                         "type": "string",
                         "enum": [
                           "Pilihan Ganda",
-                          "Esay",
-                          "Sub Soal"
+                          "Multi jawaban"
                         ]
                       },
                       "waktu": {
@@ -8449,6 +8532,23 @@
                                   "properties": {}
                                 }
                               }
+                            }
+                          }
+                        }
+                      },
+                      "multi_jawaban": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "hint": {
+                              "type": "string"
+                            },
+                            "jawaban": {
+                              "type": "integer"
                             }
                           }
                         }

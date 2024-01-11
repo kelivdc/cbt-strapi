@@ -29,11 +29,11 @@
     },
     "mulai": {
       "type": "datetime",
-      "required": true
+      "required": false
     },
     "akhir": {
       "type": "datetime",
-      "required": true
+      "required": false
     },
     "tipe_soal": {
       "type": "enumeration",
