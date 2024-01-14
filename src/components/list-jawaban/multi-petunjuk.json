@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_list_jawaban_multi_petunjuks",
+  "info": {
+    "displayName": "multi_petunjuk"
+  },
+  "options": {},
+  "attributes": {
+    "abjad": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

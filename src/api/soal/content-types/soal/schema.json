@@ -68,6 +68,69 @@
       "type": "component",
       "repeatable": true,
       "component": "list-jawaban.multi-jawaban"
+    },
+    "multi_bahan_1": {
+      "type": "string",
+      "maxLength": 1,
+      "minLength": 1,
+      "required": true
+    },
+    "multi_bahan_2": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1,
+      "minLength": 1
+    },
+    "multi_bahan_3": {
+      "type": "string",
+      "maxLength": 1,
+      "minLength": 1,
+      "required": true
+    },
+    "multi_bahan_4": {
+      "type": "string",
+      "maxLength": 1,
+      "minLength": 1,
+      "required": true
+    },
+    "multi_bahan_5": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1,
+      "minLength": 1
+    },
+    "multi_abjad_1": {
+      "type": "string",
+      "maxLength": 1,
+      "minLength": 1,
+      "required": true
+    },
+    "multi_abjad_2": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1,
+      "minLength": 1
+    },
+    "multi_abjad_3": {
+      "type": "string",
+      "maxLength": 1,
+      "minLength": 1,
+      "required": true
+    },
+    "multi_abjad_4": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1,
+      "minLength": 1
+    },
+    "multi_abjad_5": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1,
+      "minLength": 1
+    },
+    "multi_perintah": {
+      "type": "string"
     }
   }
 }

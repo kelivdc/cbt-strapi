@@ -25,11 +25,23 @@ export interface ListJawabanMultiJawaban extends Schema.Component {
   };
 }
 
+export interface ListJawabanMultiPetunjuk extends Schema.Component {
+  collectionName: 'components_list_jawaban_multi_petunjuks';
+  info: {
+    displayName: 'multi_petunjuk';
+  };
+  attributes: {
+    abjad: Attribute.String;
+    value: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'list-jawaban.jawaban': ListJawabanJawaban;
       'list-jawaban.multi-jawaban': ListJawabanMultiJawaban;
+      'list-jawaban.multi-petunjuk': ListJawabanMultiPetunjuk;
     }
   }
 }
