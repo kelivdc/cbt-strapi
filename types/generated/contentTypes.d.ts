@@ -942,6 +942,7 @@ export interface ApiUserJawabanUserJawaban extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.user'
     >;
+    multi_id: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
