@@ -864,6 +864,7 @@ export interface ApiSoalSoal extends Schema.CollectionType {
         maxLength: 1;
       }>;
     multi_perintah: Attribute.String;
+    urutan: Attribute.Integer & Attribute.DefaultTo<0>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

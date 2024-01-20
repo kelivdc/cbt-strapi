@@ -131,6 +131,10 @@
     },
     "multi_perintah": {
       "type": "string"
+    },
+    "urutan": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
