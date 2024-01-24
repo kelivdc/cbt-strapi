@@ -6,7 +6,7 @@ module.exports = [
     config: {
       enabled: true,
       headers: '*',
-      origin: ['http://localhost:1337', 'https://admin.misteryoscourse.com', 'http://localhost:3000']
+      origin: ['http://localhost:1337', 'https://admin.misteryoscourse.com', 'http://localhost:3000','https://api.misteryoscourse.com']
     }
   },
   'strapi::poweredBy',
