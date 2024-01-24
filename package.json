@@ -9,7 +9,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@bn-digital/strapi-plugin-field-uuid": "^1.2.12",
     "@strapi/plugin-cloud": "4.15.2",
