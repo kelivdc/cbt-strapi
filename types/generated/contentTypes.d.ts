@@ -804,61 +804,51 @@ export interface ApiSoalSoal extends Schema.CollectionType {
     >;
     multi_jawaban: Attribute.Component<'list-jawaban.multi-jawaban', true>;
     multi_bahan_1: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 1;
         maxLength: 1;
       }>;
     multi_bahan_2: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 1;
         maxLength: 1;
       }>;
     multi_bahan_3: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 1;
         maxLength: 1;
       }>;
     multi_bahan_4: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 1;
         maxLength: 1;
       }>;
     multi_bahan_5: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 1;
         maxLength: 1;
       }>;
     multi_abjad_1: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 1;
         maxLength: 1;
       }>;
     multi_abjad_2: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 1;
         maxLength: 1;
       }>;
     multi_abjad_3: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 1;
         maxLength: 1;
       }>;
     multi_abjad_4: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 1;
         maxLength: 1;
       }>;
     multi_abjad_5: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 1;
         maxLength: 1;

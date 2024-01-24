@@ -73,11 +73,11 @@
       "type": "string",
       "maxLength": 1,
       "minLength": 1,
-      "required": true
+      "required": false
     },
     "multi_bahan_2": {
       "type": "string",
-      "required": true,
+      "required": false,
       "maxLength": 1,
       "minLength": 1
     },
@@ -85,17 +85,17 @@
       "type": "string",
       "maxLength": 1,
       "minLength": 1,
-      "required": true
+      "required": false
     },
     "multi_bahan_4": {
       "type": "string",
       "maxLength": 1,
       "minLength": 1,
-      "required": true
+      "required": false
     },
     "multi_bahan_5": {
       "type": "string",
-      "required": true,
+      "required": false,
       "maxLength": 1,
       "minLength": 1
     },
@@ -103,11 +103,11 @@
       "type": "string",
       "maxLength": 1,
       "minLength": 1,
-      "required": true
+      "required": false
     },
     "multi_abjad_2": {
       "type": "string",
-      "required": true,
+      "required": false,
       "maxLength": 1,
       "minLength": 1
     },
@@ -115,17 +115,17 @@
       "type": "string",
       "maxLength": 1,
       "minLength": 1,
-      "required": true
+      "required": false
     },
     "multi_abjad_4": {
       "type": "string",
-      "required": true,
+      "required": false,
       "maxLength": 1,
       "minLength": 1
     },
     "multi_abjad_5": {
       "type": "string",
-      "required": true,
+      "required": false,
       "maxLength": 1,
       "minLength": 1
     },
