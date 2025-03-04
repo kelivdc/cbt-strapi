@@ -4,7 +4,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
+      enabled: false,
       headers: '*',
       origin: ['http://localhost:1337','https://admin.misteryoscourse.com', 'http://localhost:3000','https://api.misteryoscourse.com', 'http://cbt.misteryoscourse.com:1337','http://cbt.misteryoscourse.com','https://cbt.misteryoscourse.com','http://localhost:5173','http://localhost:4000']
     }
