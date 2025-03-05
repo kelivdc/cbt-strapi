@@ -14,6 +14,7 @@ module.exports = [
         'https://api.misteryoscourse.com',
         'http://cbt.misteryoscourse.com:1337',
         'https://cbt.misteryoscourse.com',
+        'https://misteryoscourse.com',
         'http://localhost:5173',
         'http://localhost:4000'
       ]
